@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rum</title>
+    
+    <link rel="shortcut icon" href="assets/images/wine-glass.png" />
+
+    <!-- <link rel="stylesheet" href="./assets/js/admin.js"> -->
+    <link rel="stylesheet" href="./assets/css/sanpham.css"/>
+    <link rel="stylesheet" href="./assets/css/header.css"/>
+    <link rel="stylesheet" href="./assets/css/taikhoan.css"/>
+    <link rel="stylesheet" href="./assets/css/repo-mobile.css">
+    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
+
+    <script src="./assets/js/products.js"></script>
+    <script src="./assets/js/sanpham.js"></script>
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/login.js"></script>
+  </head>
+  <body>
+    <div id="wrapper" class="container">
+      <script>addheader();</script>
+
+      <div id="wp-products">
+        <h2>SẢN PHẨM CỦA CHÚNG TÔI</h2>
+        <input placeholder="Giá trị dưới..." class="khoanggiatien" value="" type="number" >₫ -
+        <input placeholder="Giá trị trên..." class="khoanggiatien" value="" type="number" >₫
+        <input type="button" value="Lọc" class="khoanggiatien" onclick="addtable('All',1)">
+        <div id="buttons">
+          <input type="button" class="button-value" value="All" onclick="addtable(value,1)">
+          <input type="button" class="button-value" value="Rum" onclick="addtable(value,1)">
+          <input type="button" class="button-value" value="Whisky" onclick="addtable(value,1)">
+          <input type="button" class="button-value" value="Vodka" onclick="addtable(value,1)">
+        </div>
+        <section id="list-products">
+          <div id="soluongsanpham"></div>
+        </section>
+        
+        <div id="khungchitietsanpham" class="overclass"></div>
+      </div>
+      <div id="message">
+        <div id="hihi"></div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+
+ #header {
+    width: 100%;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 5;
+    border-bottom:1px solid rgba(44, 35, 35, 0.164) ;
+}
+#header .repo{
+    display: none;
+}
+#header .logo a img {
+    width: 75%;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#menu .item {
+    text-transform: uppercase;
+    cursor: pointer;
+   line-height:100px;
+   min-width: 100px;
+}
+
+#menu .item:hover {
+    background-color: rgba(0, 0, 0, 0.056);
+}
+
+#menu .item a {
+    color: #1e2824;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+#menu .subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+#menu .subnav {
+    display: none;
+    min-width: 80px;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    line-height: 40px;
+}
+
+#menu .subnav li {
+    width: 100%;
+}
+
+#menu li:hover .subnav {
+    display: block;
+}
+
+#menu .subnav a {
+    color: #000;
+    padding: 0 12px;
+    height: 38px;
+}
+
+#actions {
+    display: flex;
+}
+#actions .cart,
+#actions .user {
+    margin-left: 22px;
+}
+
+#actions .user{
+    margin-right: 10px;
+}
+
+#actions .cart a,
+#actions .user a{
+    text-decoration: none;
+    color: #565;
+    font-size: 18px;
+}
+#actions .cart a:hover,
+#actions .user a:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+.cart{
+    margin-left: 20px;
+}
+.container{
+    max-width: 1500px;
+    margin: 0 auto;
+ }
